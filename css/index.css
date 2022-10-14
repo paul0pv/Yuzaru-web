@@ -1,0 +1,19 @@
+@import './modules/variables.css';
+@import './modules/layout.css';
+@import './modules/header.css';
+@import './modules/nav.css';
+@import './modules/menu.css';
+@import './modules/cards.css';
+@import './modules/buttons.css';
+@import './modules/hero.css';
+@import './modules/animations.css';
+
+.body {
+
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 14px ), repeating-linear-gradient( #00000055, #000000 );
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
+  margin: 0;
+} 
