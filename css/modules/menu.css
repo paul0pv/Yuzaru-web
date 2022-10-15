@@ -1,0 +1,102 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  
+.menu--header {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-theme-color);
+  transform: translateX(var(--translate-x-menu));
+  transition: transform 0.25s;
+}
+
+.menu__link--blog {
+  border: none;
+  color: var(--primary-text-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.menu__link--blogdrop {
+  position: fixed;
+  list-style: none;
+  border-radius: 3%;
+  top: 1.5rem;
+  left: 4rem;
+  box-shadow: 0 0 10px var(--primary-section-color);
+  background-color: var(--primary-theme-color);
+  width: 7rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.menu__link:hover ul, .menu__link:focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__link--blogitem {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 200ms ease-in-out, font-weight 250ms ease-in;
+} 
+
+.menu__link--blog:hover, .menu__link--blog:focus {
+  color: var(--primary-highlight-color);
+}
+
+.menu__link--blogitem:hover, .menu__link--blogitem:focus {
+  color: var(--primary-highlight-color);
+  font-weight: 700;
+}
+
+
+@media (min-width: 768px) {
+  .menu--header {
+    flex-direction: row;
+    background-color: transparent;
+    position: static;
+    width: auto;
+  }
+
+  .menu__link--blog {
+    position: relative;
+  }
+
+  .menu__link--blog::after {
+    content:'';
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 1.25rem;
+    width: 0;
+    height: 0.3rem;
+    background-color: var(--secondary-highlight-color);
+    transition: width 200ms ease-in;
+  }
+  
+  .menu__link--blog:hover::after, .menu__link--blog:focus::after {
+    width: 125%;
+  }
+  
+
+  
+}

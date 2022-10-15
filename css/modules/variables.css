@@ -1,0 +1,15 @@
+:root{
+    scroll-behavior: smooth;
+    --primary-theme-color: #20232a;
+    --primary-shadow-color: #ffffff80;
+    --reverse-primary-theme-color:#00000080;
+    --reverse-primary-shadow-color:#00000090;
+    --reverse-secondary-theme-color:#00000040;
+    --reverse-secondary-shadow-color:#00000040;
+    --primary-text-color: #ffffff;
+    --reverse-primary-text-color: #000;
+    --primary-highlight-color: #61dafb;
+    --secondary-highlight-color: gold;
+    --primary-section-color:rgba(59, 59, 59, 0.753);
+    --primary-font-family: 'Playfair Display' monospace;
+}
