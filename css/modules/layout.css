@@ -10,9 +10,8 @@
     flex-direction: column;
     gap: 2rem;
   }
-
-   
-  .elements--header-nav{
+ 
+  .elements--header-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -92,13 +91,11 @@
     background-color: var(--secondary-highlight-color);
     }
 
-
-
-  .section__title--link{
+  .section__title--link {
     text-decoration: none;
   }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .elements--hero {
     grid-template-columns: 1fr 1fr;
   }
