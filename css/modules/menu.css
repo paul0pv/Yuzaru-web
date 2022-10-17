@@ -68,6 +68,14 @@
   font-weight: 700;
 }
 
+.menu__link--footer{
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+
+.menu__link--footer:hover, .menu__link--footer:focus {
+  opacity: 0.7;
+}
 
 @media (min-width: 768px) {
   .menu--header, .menu--footer {
@@ -94,7 +102,7 @@
   }
   
   .menu__link--blog:hover::after, .menu__link--blog:focus::after {
-    width: 125%;
+    width: 110%;
   }
   
 

@@ -1,0 +1,44 @@
+.footer {
+    position: block;
+    z-index: 25;
+    bottom:0;
+    left:0;
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.25s, box-shadow 0.25s;
+    background-color: var(--primary-theme-color);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-nav {
+    --translate-x-menu: 100%;
+    --padding-nav: 1rem; 
+    padding-top: var(--padding-nav);
+    padding-bottom: var(--padding-nav);
+    transition: padding 0.25s;  
+}
+
+.credits{
+    font-size: 0.9rem;
+    position: absolute;
+    padding-left: 30%;
+}
+
+.footer__rs-icon {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+.footer__rs-icon:hover, .footer__rs-icon:focus {
+    opacity: 0.85;
+}
+
+@media (min-width: 768px) {
+    .credits{
+        padding-left: 42.5%;
+    }
+}

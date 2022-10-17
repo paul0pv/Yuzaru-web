@@ -8,6 +8,7 @@
 @import './modules/buttons.css';
 @import './modules/hero.css';
 @import './modules/swiper.css';
+@import './modules/footer.css';
 .body {
   background-color: #e5e5f7;
   opacity: 1;
