@@ -5,7 +5,7 @@
   padding-bottom: var(--padding-nav);
   transition: padding 0.25s;
   
-  }
+}
 
   .nav--scroll {
     padding: 0.5rem;
@@ -73,7 +73,6 @@
   }
 
   .nav:hover{
-
     background-color: var(--reverse-primary-shadow-color);
   }
 }

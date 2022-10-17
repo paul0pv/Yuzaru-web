@@ -8,7 +8,7 @@
   list-style: none;
 }
   
-.menu--header {
+.menu--header, .menu--footer {
   flex-direction: column;
   position: fixed;
   top: 0;
@@ -20,7 +20,7 @@
   transition: transform 0.25s;
 }
 
-.menu__link--blog {
+.menu__link--blog, .menu__link--footer {
   border: none;
   color: var(--primary-text-color);
   font-weight: 600;
@@ -70,13 +70,13 @@
 
 
 @media (min-width: 768px) {
-  .menu--header {
+  .menu--header, .menu--footer {
     flex-direction: row;
     background-color: transparent;
     position: static;
     width: auto;
   }
-
+  
   .menu__link--blog {
     position: relative;
   }
