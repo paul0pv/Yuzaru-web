@@ -72,6 +72,7 @@
   background-image: url('https://i.pinimg.com/564x/99/b4/2e/99b42e1a16c09f244c5c18a9eec43dd7.jpg');
   background-size: cover;
   background-position: center;
+  align-items: center;
 }
 
 .section__title {
